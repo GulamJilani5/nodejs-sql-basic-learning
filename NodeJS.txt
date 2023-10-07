@@ -1,0 +1,94 @@
+NodeJS
+To create a app:
+npm init
+and proceed accordingly it will create package.json
+then npm i exress
+It will create all the node dependencies.
+
+Open in browser - http://127.0.0.1:3000/
+
+(a) When listening in app.js to run on terminal - node app.js
+(b) We are listening in server.js file.
+   So we use - node server.js
+
+(c) To terminate the running server - ctrl + c 
+
+(d) npm instal nodemon --save-dev  (Lec-19, types of packages and install) 
+       To run node web server automatically
+      "scripts": {
+                   "start": "nodemon server.js"
+                 }
+       npm run start 
+
+ (e) npm i dotenv
+       To manage config.env environment variable
+
+ (f) npm install slugify
+
+ (g) npm install morgan
+
+========================================================================================================================
+=============================SQL SERVER=================================================================================
+
+(1) sql server should be installed on our system
+   I did express version
+  Server=localhost\SQLEXPRESS;Database=master;Trusted_Connection=True;
+  Server=localhost\MSSQLSERVER01;Database=master;Trusted_Connection=True;
+
+  odbc dns configuration
+   dns name : odbcconfig
+
+  user authentication
+   security -> login -> sa ->right click -> properties -> set password
+   security -> login -> sa ->right click -> properties -> status -> login -> enabled
+
+
+  sqlcmd -S <ServerName>,<PortNumber> -U <Username> -P <Password>
+  sqlcmd -S localhost\SQLEXPRESS,1433 localhost\SQLEXPRESS 
+  sqlcmd -S localhost\SQLEXPRESS,1433 localhost\SQLEXPRESS fbjn56%^
+
+Server name : JILANI\SQLEXPRESS
+datbase : master  // We can say our own created db
+port : 1433
+user : JILANI\gulam
+driver : ODBC Driver 17 for SQL Server
+
+
+
+
+ It should be running we can check on services.msc
+(2) Install ssms
+    ssms is use to create db and table and execute query
+(3) Open it and do connection 
+server type - Database engine
+server name - localhost/127.0.01
+authentication - Windows authentication
+
+
+=======================================================================================================================
+=============================POSTGRESQL=================================================================================
+
+(1) pgadmin is use to create db and table and execute query
+
+(2) Installation details
+Installation Directory: C:\Program Files\PostgreSQL\16
+Server Installation Directory: C:\Program Files\PostgreSQL\16
+Data Directory: C:\Program Files\PostgreSQL\16\data
+Database Port: 5432
+Database Superuser: postgres
+Operating System Account: NT AUTHORITY\NetworkService
+Database Service: postgresql-x64-16
+Command Line Tools Installation Directory: C:\Program Files\PostgreSQL\16
+pgAdmin4 Installation Directory: C:\Program Files\PostgreSQL\16\pgAdmin 4
+Stack Builder Installation Directory: C:\Program Files\PostgreSQL\16
+Installation Log: C:\Users\gulam\AppData\Local\Temp\install-postgresql.log
+
+(3) Credentials
+server: localhost
+Database: postgres // I have created 'nodejsdb'
+username: postgres
+password: 
+Port - 5432
+
+(4) Querying
+right click on particular database and schema to perform sql query in that particular database or schema
